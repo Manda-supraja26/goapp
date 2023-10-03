@@ -12,17 +12,9 @@ This is a sample GoLang application that demonstrates how to build a RESTful API
 git clone https://github.com/Manda-supraja26/goapp.git
 ```
 
-- Install the necessary dependencies:
-```
-go mod tidy
-```
 
-- Run the application:
-```
-go run main.go
-```
 
-The application should now be running on http://localhost:8080.
+
 
 ## API Endpoints
 
