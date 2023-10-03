@@ -7,8 +7,18 @@ import (
 
 var db *gorm.DB
 
+type MysqlConfig struct {
+	UserName string
+	Password string
+	DbName   string
+	Port     uint
+	Host     string
+}
+
 func Connect() {
-	d, err := gorm.Open("mysql", "manda:supraja@/movie?charset=utf8&parseTime=True&loc=Local")
+	// dsn := fmt.Sprint("%s:%s@/%s", config.UserName,config.Password,config.Dbname)
+	d, err := gorm.Open("mysql", "root:@root@/db?charset=utf8&parseTime=True&loc=Local")
+	// d, err := gorm.Open("mysql", GetConnectionString())
 	if err != nil {
 		panic(err)
 	}
