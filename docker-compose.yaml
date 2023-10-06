@@ -1,22 +1,24 @@
 version: '3.7'
+
+
 services:
   db: 
     container_name: moviestore-app
     build:
       context: .
-      dockerfile: db.Dockerfile 
+      dockerfile: db.Dockerfile
     networks:
       - default
     restart: always
     ports:
-    - "3306:3306"
+    - "3309:3306"
     environment:
       MYSQL_RANDOM_ROOT_PASSWORD: "secret"
       MYSQL_DATABASE: "movie"
       MYSQL_USER: "movie_user"
       MYSQL_PASSWORD: "secret"
     volumes:
-    - mysql_data/var/lib/mysql 
+    - mysql_data:/var/lib/mysql 
     command: --default-authentication-plugin=my_native_password
   api:
     container_name: "movie_api"
