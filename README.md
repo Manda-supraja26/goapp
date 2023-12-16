@@ -1,10 +1,12 @@
-# GoLang Application with Gorilla Mux and MySQL
+ GoLang Application with Gorilla Mux and MySQL
 This is a sample GoLang application that demonstrates how to build a RESTful API using Gorilla Mux for routing and MySQL for the database. It implements basic CRUD operations (Create, Read, Update, Delete) for managing resources.
 
 ## Prerequisites
-- Go 
-- MySQL 
-- Postman (for testing the API endpoints)
+- Go: Ensure you have Go installed (version 1.13 or higher recommended) for development and compilation. 
+- MySQL: A running instance of MySQL is required for the database backend.
+- Docker: For containerization and easy deployment, Docker should be installed and running.
+- Postman: Recommended for testing and interacting with the API endpoints.
+- An IDE or text editor of your choice (such as Visual Studio Code, GoLand, or Atom) for writing and editing code.
 
 ## Getting Started
 - Clone the repository:
